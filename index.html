@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Aether Studio — Architectural Puffer Jackets. Pure form, lightweight warmth, and borderless Apple-grade glassmorphic interface.">
+  <title>AETHER STUDIO — Stand Out Without Trying</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="theme-frost">
+
+  <!-- Full-Bleed Default Presentation Shell (100vw x 100vh) -->
+  <div id="presentation-shell" class="mode-bleed">
+
+    <!-- Main Showcase Interactive Canvas -->
+    <main id="showcase-card" class="showcase-card" role="region" aria-label="Aether Studio Showcase">
+
+      <!-- Dynamic Ambient Lighting Stages -->
+      <div class="ambient-stage" aria-hidden="true">
+        <div class="ambient-layer ambient-frost active" id="ambient-frost"></div>
+        <div class="ambient-layer ambient-crimson" id="ambient-crimson"></div>
+        <div class="ambient-layer ambient-obsidian" id="ambient-obsidian"></div>
+        <div class="ambient-spotlight" id="ambient-spotlight"></div>
+      </div>
+
+      <!-- Top Navigation Bar -->
+      <nav class="showcase-navbar" aria-label="Main Navigation">
+        <!-- Rebranded Logo: AE | AETHER STUDIO -->
+        <a href="#featured" class="brand-group" id="brand-link" aria-label="Aether Studio Home">
+          <span class="monogram-box">AE</span>
+          <span class="brand-title">AETHER STUDIO</span>
+        </a>
+
+        <!-- Center Seamless Borderless Glassmorphic Pill Nav -->
+        <div class="nav-pill-container" role="menubar">
+          <button class="nav-link-btn active" data-nav="puffer" role="menuitem">PUFFER JACKET</button>
+          <button class="nav-link-btn" data-nav="all" role="menuitem">ALL PRODUCTS</button>
+          <button class="nav-link-btn" data-nav="about" role="menuitem">ABOUT US</button>
+          <button class="nav-link-btn" data-nav="contact" role="menuitem">CONTACT</button>
+        </div>
+
+        <!-- Right Utility Buttons (Cart & Wishlist) -->
+        <div class="nav-actions">
+          <button class="action-circle-btn" id="cart-toggle-btn" aria-label="Shopping Cart" title="View Cart">
+            <!-- Minimal shopping cart stroke icon -->
+            <svg class="nav-icon cart-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="20" r="1.2"></circle>
+              <circle cx="19" cy="20" r="1.2"></circle>
+              <path d="M2 3h3.6l2.4 12h11.2l2-8H6.5"></path>
+            </svg>
+            <span class="badge-counter" id="cart-counter">0</span>
+          </button>
+
+          <button class="action-circle-btn" id="wishlist-toggle-btn" aria-label="Wishlist" title="View Saved Items">
+            <svg class="nav-icon heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="badge-counter wishlist-badge" id="wishlist-counter">0</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- VIEW 1: Main 3-Column Hero Product Showcase -->
+      <section class="showcase-content-grid view-stage active-view" id="hero-showcase-view">
+
+        <!-- Left Column: Editorial & Slider Controls -->
+        <div class="column-left">
+          <!-- Slider Navigation & Edition Indicator Swatches -->
+          <div class="slider-controls-row">
+            <div class="slider-arrows-group">
+              <button class="slider-nav-btn prev" id="slider-prev-btn" aria-label="Previous Product" title="Previous Item">
+                <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="slider-nav-btn next" id="slider-next-btn" aria-label="Next Product" title="Next Item">
+                <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Edition Indicator & Quick Color Swatches -->
+            <div class="edition-indicator-group">
+              <span class="edition-label" id="edition-label">01 / 03 — FROST EDITION</span>
+              <div class="edition-swatches" role="radiogroup" aria-label="Edition Selector">
+                <button class="swatch-dot active" data-edition="0" aria-label="Frost Slate Edition" title="Frost Slate"></button>
+                <button class="swatch-dot" data-edition="1" aria-label="Crimson Red Edition" title="Crimson Red"></button>
+                <button class="swatch-dot" data-edition="2" aria-label="Obsidian Gold Edition" title="Obsidian Gold"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Headline: Strictly 2 Lines with white-space: nowrap -->
+          <div class="headline-mask-wrapper">
+            <h1 class="hero-headline" id="hero-headline">
+              <span class="line line-1">Stand out</span>
+              <span class="line line-2">Without trying</span>
+            </h1>
+          </div>
+
+          <!-- Authentic Human Editorial Description -->
+          <div class="description-mask-wrapper">
+            <p class="hero-description" id="hero-description">
+              It's not just about staying warm. It's about stepping outside and instantly feeling confident, comfortable, and completely yourself. Designed to elevate even the simplest outfit, this piece wraps you in lightweight warmth.
+            </p>
+          </div>
+
+          <!-- Primary CTA Button -->
+          <div class="cta-wrapper">
+            <button class="cta-pill-button" id="cta-get-look" aria-label="Get the look">
+              <span class="cta-text">Get the look</span>
+              <span class="cta-arrow-circle">
+                <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Bottom Left Social Links Bar -->
+          <footer class="social-bar" aria-label="Social Links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.33 1.365-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.546.535 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"></path>
+              </svg>
+            </a>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Behance">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.971 3-3.417 0-5.755-2.484-5.755-6 0-3.328 2.29-6 5.67-6 3.655 0 5.484 2.812 5.158 6.777h-8.082c.112 1.63 1.258 2.651 2.899 2.651 1.326 0 2.215-.65 2.625-1.428h2.456zm-7.854-4h5.271c-.139-1.367-.991-2.195-2.527-2.195-1.571 0-2.56.883-2.744 2.195zm-9.872 7h-6v-14h6.052c2.816 0 4.82 1.332 4.82 3.863 0 1.514-.852 2.637-2.062 3.197 1.658.553 2.59 1.884 2.59 3.648 0 2.812-2.196 3.292-5.4 3.292zm-3.5-8.5h3.188c1.371 0 2.285-.566 2.285-1.758 0-1.117-.898-1.742-2.269-1.742h-3.204v3.5zm0 6h3.428c1.551 0 2.545-.633 2.545-1.984 0-1.285-1.023-2.016-2.578-2.016h-3.395v4z"></path>
+              </svg>
+            </a>
+          </footer>
+        </div>
+
+        <!-- Center Column: Floating Product Stage -->
+        <div class="column-center">
+          <div class="stage-view-port" id="stage-viewport">
+            
+            <!-- Floating Product Image Container -->
+            <div class="product-floating-rig" id="product-floating-rig">
+              <div class="product-visual-wrapper" id="product-visual-wrapper">
+                <img 
+                  id="main-product-img" 
+                  class="main-product-img idle-levitate" 
+                  src="assets/jacket_silver.png" 
+                  alt="Frost Metallic Puffer Jacket" 
+                  draggable="false"
+                >
+              </div>
+            </div>
+
+            <!-- Dedicated Floor Shadow Ellipse -->
+            <div class="ground-shadow-ellipse" id="ground-shadow" aria-hidden="true"></div>
+
+            <!-- Bottom Center Caption Tagline -->
+            <div class="stage-caption-wrapper">
+              <p class="stage-caption" id="stage-caption">
+                <span class="caption-line">Confidence,</span>
+                <span class="caption-line">wrapped in warmth</span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Pricing, Size Selector & Next-Product Teaser -->
+        <div class="column-right">
+          <!-- Pricing Stack -->
+          <div class="pricing-container">
+            <div class="current-price" id="display-current-price">$149</div>
+            <div class="old-price" id="display-old-price">
+              <span>$199</span>
+            </div>
+          </div>
+
+          <!-- Size Selector Header with Size Guide Trigger -->
+          <div class="size-selector-container">
+            <div class="size-header-row">
+              <span class="size-prompt-label">Choose your size:</span>
+              <button class="size-guide-btn" id="size-guide-toggle-btn" type="button" aria-haspopup="dialog" aria-expanded="false">Size Guide</button>
+            </div>
+            <div class="size-button-group" role="radiogroup" aria-label="Available Sizes">
+              <button class="size-circle-btn active" data-size="36" role="radio" aria-checked="true">36</button>
+              <button class="size-circle-btn" data-size="38" role="radio" aria-checked="false">38</button>
+              <button class="size-circle-btn" data-size="40" role="radio" aria-checked="false">40</button>
+            </div>
+          </div>
+
+          <!-- Interactive Size Guide Popover -->
+          <div class="size-guide-popover" id="size-guide-popover" role="dialog" aria-hidden="true" aria-label="Outerwear Size Guide">
+            <div class="size-guide-header">
+              <h4 class="size-guide-title">Size & Fit Guide</h4>
+              <button class="size-guide-close" id="size-guide-close" aria-label="Close size guide">✕</button>
+            </div>
+            <div class="size-guide-body">
+              <table class="size-guide-table">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Chest</th>
+                    <th>Shoulder</th>
+                    <th>Length</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>36 (S)</td>
+                    <td>114 cm</td>
+                    <td>48 cm</td>
+                    <td>64 cm</td>
+                  </tr>
+                  <tr class="selected-row">
+                    <td>38 (M)</td>
+                    <td>118 cm</td>
+                    <td>50 cm</td>
+                    <td>66 cm</td>
+                  </tr>
+                  <tr>
+                    <td>40 (L)</td>
+                    <td>124 cm</td>
+                    <td>52 cm</td>
+                    <td>68 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="size-guide-note">Model is 6'1" (185 cm) wearing Size 38. Designed for a comfortable regular unisex fit over light knitwear.</p>
+            </div>
+          </div>
+
+          <!-- Bottom-Right Next Product Interactive Floating Teaser with Hover Affordance -->
+          <div class="next-product-teaser-card" id="next-product-trigger" role="button" tabindex="0" aria-label="Switch to next product">
+            <div class="teaser-hover-pill" id="teaser-hover-pill" aria-hidden="true">
+              <span id="teaser-pill-text">Next: Crimson Edition</span>
+              <span class="teaser-pill-arrow">→</span>
+            </div>
+            <div class="teaser-visual-box">
+              <img 
+                id="next-product-thumb-img" 
+                class="teaser-thumb-img" 
+                src="assets/jacket_crimson.png" 
+                alt="Next product preview" 
+                draggable="false"
+              >
+              <div class="teaser-floor-shadow"></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- VIEW 2: Interactive "ALL PRODUCTS" Apple-Grade Catalog Grid -->
+      <section class="catalog-grid-view view-stage" id="catalog-view" aria-label="All Outerwear Collection">
+        <div class="catalog-header">
+          <h2 class="catalog-title">Outerwear Collection</h2>
+          <p class="catalog-subtitle">Select an edition to view full 3D showcase & customize sizing</p>
+        </div>
+
+        <div class="catalog-cards-grid" id="catalog-cards-container">
+          <!-- Card 1: Frost -->
+          <div class="catalog-card" data-product-index="0" role="button" tabindex="0">
+            <div class="card-edition-badge">EDITION 01 • FROST</div>
+            <div class="card-image-box">
+              <img src="assets/jacket_silver.png" alt="Frost Puffer" class="card-product-img">
+              <div class="card-floor-shadow"></div>
+            </div>
+            <div class="card-details">
+              <h3 class="card-product-name">Frost Metallic Puffer</h3>
+              <p class="card-product-desc">Pure slate grey tone with natural down insulation.</p>
+              <div class="card-footer-row">
+                <span class="card-price">$149</span>
+                <span class="card-action-cue">View Look →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Crimson -->
+          <div class="catalog-card" data-product-index="1" role="button" tabindex="0">
+            <div class="card-edition-badge">EDITION 02 • CRIMSON</div>
+            <div class="card-image-box">
+              <img src="assets/jacket_crimson.png" alt="Crimson Puffer" class="card-product-img">
+              <div class="card-floor-shadow"></div>
+            </div>
+            <div class="card-details">
+              <h3 class="card-product-name">Crimson Gloss Puffer</h3>
+              <p class="card-product-desc">Deep crimson glaze with goose down warmth.</p>
+              <div class="card-footer-row">
+                <span class="card-price">$149</span>
+                <span class="card-action-cue">View Look →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Obsidian -->
+          <div class="catalog-card" data-product-index="2" role="button" tabindex="0">
+            <div class="card-edition-badge">EDITION 03 • OBSIDIAN</div>
+            <div class="card-image-box">
+              <img src="assets/jacket_obsidian.png" alt="Obsidian Puffer" class="card-product-img">
+              <div class="card-floor-shadow"></div>
+            </div>
+            <div class="card-details">
+              <h3 class="card-product-name">Obsidian Gold Puffer</h3>
+              <p class="card-product-desc">Matte obsidian ripstop with brushed gold accents.</p>
+              <div class="card-footer-row">
+                <span class="card-price">$189</span>
+                <span class="card-action-cue">View Look →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIEW 3: "ABOUT US" Editorial Sheet -->
+      <section class="editorial-view view-stage" id="about-view" aria-label="About Aether Studio">
+        <div class="editorial-card-inner">
+          <h2 class="editorial-heading">Quiet Form. Total Warmth.</h2>
+          <div class="editorial-text-content">
+            <p>Aether Studio was founded on a singular conviction: winter outerwear shouldn't feel cumbersome or loud. We pare back unnecessary seams, hardware, and weight, leaving behind clean architectural silhouettes and pure material comfort.</p>
+            <p>Every piece is constructed using sustainably certified 800-fill power down, encased in ultralight Japanese down-proof ripstop that repels wind and sleet effortlessly.</p>
+          </div>
+          <div class="editorial-specs-grid">
+            <div class="spec-col">
+              <span class="spec-num">800 FP</span>
+              <span class="spec-label">Responsible Down Certified</span>
+            </div>
+            <div class="spec-col">
+              <span class="spec-num">480g</span>
+              <span class="spec-label">Average Featherweight Shell</span>
+            </div>
+            <div class="spec-col">
+              <span class="spec-num">-20°C</span>
+              <span class="spec-label">Tested Cold Comfort Rating</span>
+            </div>
+          </div>
+          <button class="editorial-return-btn" id="about-return-btn">Return to Showcase</button>
+        </div>
+      </section>
+
+      <!-- VIEW 4: "CONTACT" Concierge Sheet -->
+      <section class="editorial-view view-stage" id="contact-view" aria-label="Contact Concierge">
+        <div class="editorial-card-inner contact-inner">
+          <h2 class="editorial-heading">Client Care & Concierge</h2>
+          <p class="contact-subhead">Our atelier specialists are available seven days a week for sizing inquiries, private appointments, and styling consultations.</p>
+          
+          <div class="contact-channels-grid">
+            <div class="contact-box">
+              <span class="channel-label">DIRECT CONCIERGE</span>
+              <a href="mailto:concierge@aetherstudio.com" class="channel-val">concierge@aetherstudio.com</a>
+            </div>
+            <div class="contact-box">
+              <span class="channel-label">MILAN SHOWROOM</span>
+              <span class="channel-val">Via Montenapoleone 14, 20121 Milano</span>
+            </div>
+            <div class="contact-box">
+              <span class="channel-label">TOKYO ATELIER</span>
+              <span class="channel-val">5-7-22 Minami-Aoyama, Minato-ku, Tokyo</span>
+            </div>
+          </div>
+          <button class="editorial-return-btn" id="contact-return-btn">Return to Showcase</button>
+        </div>
+      </section>
+
+      <!-- Slide-Over Frosted Glass Cart Drawer -->
+      <aside class="cart-slide-drawer" id="cart-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Your Bag">
+        <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
+        <div class="cart-drawer-content">
+          <div class="cart-drawer-header">
+            <h2 class="cart-title">Your Bag</h2>
+            <button class="cart-close-btn" id="cart-close-btn" aria-label="Close bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Dynamic Cart Items Container -->
+          <div class="cart-items-list" id="cart-items-container">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+
+          <!-- Cart Footer Summary -->
+          <div class="cart-drawer-footer" id="cart-footer">
+            <div class="cart-subtotal-row">
+              <span>Subtotal</span>
+              <span class="subtotal-val" id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="cart-perks">
+              <span class="perk-tag">✓ Complimentary Express Shipping & 30-Day Returns</span>
+            </div>
+            <button class="checkout-proceed-btn" id="checkout-standard">
+              <span>Proceed to Checkout</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="checkout-arrow">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Slide-Over Frosted Glass Wishlist Drawer -->
+      <aside class="cart-slide-drawer" id="wishlist-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Saved Items">
+        <div class="cart-drawer-backdrop" id="wishlist-backdrop"></div>
+        <div class="cart-drawer-content">
+          <div class="cart-drawer-header">
+            <h2 class="cart-title">Saved Items</h2>
+            <button class="cart-close-btn" id="wishlist-close-btn" aria-label="Close saved items">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Wishlist Items List -->
+          <div class="cart-items-list" id="wishlist-items-container">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- Tactile Toast Notifications Shelf -->
+      <div class="toast-notification-system" id="toast-shelf" aria-live="polite"></div>
+
+    </main>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
